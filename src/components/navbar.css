@@ -1,0 +1,120 @@
+/* Navbar compacte sur toute la largeur */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: 10000;
+  user-select: none;
+}
+
+/* Logo petit */
+.navbar .logo {
+  font-size: 20px;
+  font-weight: 900;
+  color: #ff6f61;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.navbar .logo:hover {
+  color: #e14e42;
+}
+
+/* Nav links compact */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  font-weight: 600;
+  font-size: 14px;
+  position: relative;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 0;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+/* Underline hover effect */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #ff6f61;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff6f61;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Bouton action plus petit */
+.cta-btn {
+  background: #ff6f61;
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 111, 97, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 14px;
+  user-select: none;
+}
+
+.cta-btn:hover {
+  background-color: #e14e42;
+  transform: translateY(-2px);
+}
+
+.cta-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive menu : liens centrés sur petits écrans */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links li {
+    font-size: 13px;
+  }
+
+  .cta-btn {
+    padding: 6px 16px;
+    font-size: 13px;
+  }
+}

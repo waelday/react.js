@@ -1,0 +1,104 @@
+/* 🌟 Contexte visuel général */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at 20% 30%, #e0eaff, #f9f9ff);
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 🧩 Bloc formulaire stylisé */
+.login-form {
+  background: #ffffff;
+  padding: 48px 36px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  width: 360px;
+  max-width: 95%;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.login-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* 📝 Titre moderne */
+.login-form h2 {
+  font-size: 26px;
+  color: #222831;
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+
+/* 🧱 Inputs modernes */
+.login-form input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  background: #f8f9fb;
+  border: 1.5px solid #d6d6d6;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #4f8ef7;
+  box-shadow: 0 0 0 3px rgba(79, 142, 247, 0.2);
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* 🟦 Bouton clean avec effet */
+.login-form button {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #4f8ef7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.login-form button:hover {
+  background-color: #3b7de0;
+  box-shadow: 0 4px 16px rgba(79, 142, 247, 0.3);
+}
+
+.login-form button:active {
+  background-color: #2e64c7;
+}
+
+/* ⚠️ Message d'erreur moderne */
+.error {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 500;
+}
+
+/* 📱 Responsive : mobile friendly */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 32px 24px;
+    width: 90%;
+  }
+
+  .login-form h2 {
+    font-size: 22px;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 14px;
+  }
+}
