@@ -2,11 +2,11 @@
     * @description      : 
     * @author           : waeld
     * @group            : 
-    * @created          : 15/05/2025 - 16:01:39
+    * @created          : 22/05/2025 - 17:47:41
     * 
     * MODIFICATION LOG
     * - Version         : 1.0.0
-    * - Date            : 15/05/2025
+    * - Date            : 22/05/2025
     * - Author          : waeld
     * - Modification    : 
 **/
@@ -24,12 +24,14 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <h2 className="logo">MonApp</h2>
+      <div className="navbar-logo">
+        <Link to="/">📘 MonApp</Link>
+      </div>
       <ul className="nav-links">
-        <li><Link to="/accueil">Accueil</Link></li>
-        <li><Link to="/students-form">Inscription étudiant</Link></li>
-        <li><Link to="/professeur">Tableau de bord professeur</Link></li>
-        <li><Link to="/signup">Créer un compte</Link></li> {/* ✅ Lien ajouté */}
+      
+        <li><Link to="/students-form">Connexion</Link></li>
+        <li><Link to="/professeur">Tableau professeur</Link></li>
+        <li><Link to="/signup">Créer un compte</Link></li>
         <li>
           <button onClick={handleLogout} className="logout-btn">
             Déconnexion

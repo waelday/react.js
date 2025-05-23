@@ -1,95 +1,48 @@
-/* acceil.css */
+/* Accueil.css */
 
-/* Structure principale */
-.acceil-container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 30px;
-  background-color: #f9f9f9;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.accueil-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  min-height: 100vh;
 }
 
-/* En-tête */
-.acceil-header {
+.accueil-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-.acceil-header h2 {
-  font-size: 2em;
+.accueil-header h1 {
+  font-size: 2.5rem;
   color: #2c3e50;
-}
-
-.acceil-header p {
-  color: #555;
-  font-size: 1.1em;
-}
-
-/* Sections générales */
-.dashboard-info, .news-section {
-  margin-bottom: 30px;
-}
-
-.dashboard-info h3,
-.news-section h3 {
-  color: #34495e;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
-}
-
-/* Listes */
-.dashboard-info ul,
-.news-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.dashboard-info li,
-.news-section li {
   margin-bottom: 10px;
-  padding: 8px;
-  background-color: #ffffff;
-  border-left: 4px solid #3498db;
-  transition: background-color 0.3s;
 }
 
-.dashboard-info li:hover,
-.news-section li:hover {
-  background-color: #eaf3fc;
+.accueil-header p {
+  font-size: 1.2rem;
+  color: #34495e;
 }
 
-/* Liens */
-a {
-  color: #2980b9;
-  text-decoration: none;
-  font-weight: 500;
+.accueil-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* Bouton de déconnexion */
-.logout-section {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.logout-section button {
-  background-color: #e74c3c;
+.accueil-button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  background-color: #3498db;
   color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1em;
-  font-weight: bold;
-  transition: background-color 0.3s;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.logout-section button:hover {
-  background-color: #c0392b;
+.accueil-button:hover {
+  background-color: #2980b9;
 }
